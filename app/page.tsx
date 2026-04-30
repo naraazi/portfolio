@@ -28,6 +28,13 @@ export default function Home() {
                         >
                             Ver próximos projetos
                         </a>
+                        <a
+                            href="/files/curriculo.pdf"
+                            className="button secondary"
+                            download="Currículo - Lorenzo Alberto.pdf"
+                        >
+                            Baixar currículo
+                        </a>
                     </div>
                 </div>
 
