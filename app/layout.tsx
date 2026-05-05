@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "Lorenzo Alberto | Portfolio",
-    description: "Portfolio profissional de projetos, produtos e experimentos.",
+    title: "Lorenzo Alberto | Desenvolvedor Full Stack",
+    description:
+        "Portfólio profissional de Lorenzo Alberto: desenvolvimento full stack, dados, BI e inteligência artificial aplicada.",
 };
 
 export default function RootLayout({
