@@ -29,6 +29,7 @@ body {
     Arial,
     Helvetica,
     sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -40,11 +41,13 @@ a {
   margin: 0 auto;
   max-width: 1440px;
   min-height: 100vh;
+  width: 100%;
 }
 
 .topbar {
   align-items: center;
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
   padding: 1.25rem clamp(1rem, 4vw, 4rem);
 }
@@ -66,12 +69,14 @@ a {
   align-items: center;
   display: flex;
   gap: clamp(1rem, 3vw, 2rem);
+  min-width: 0;
 }
 
 .nav-links a {
   color: var(--muted);
   font-size: 0.92rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -82,7 +87,7 @@ a {
   align-items: end;
   display: grid;
   gap: clamp(2rem, 5vw, 5rem);
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.44fr);
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.44fr);
   min-height: calc(100vh - 72px);
   padding: clamp(2rem, 5vw, 5rem) clamp(1rem, 4vw, 4rem);
 }
@@ -110,7 +115,7 @@ p {
 
 h1 {
   color: var(--foreground);
-  font-size: clamp(4.2rem, 12vw, 10.5rem);
+  font-size: 9.5rem;
   letter-spacing: 0;
   line-height: 0.88;
   margin-bottom: 1.5rem;
@@ -119,7 +124,7 @@ h1 {
 
 .intro {
   color: var(--muted);
-  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  font-size: 1.35rem;
   line-height: 1.55;
   margin-bottom: 0;
   max-width: 760px;
@@ -175,7 +180,7 @@ h1 {
 
 .profile-panel strong {
   display: block;
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-size: 2.3rem;
   letter-spacing: 0;
   line-height: 1.05;
   margin-bottom: 1rem;
@@ -214,7 +219,7 @@ h1 {
 }
 
 .section-heading h2 {
-  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-size: 3.1rem;
   letter-spacing: 0;
   line-height: 1;
   margin-bottom: 0;
@@ -333,6 +338,10 @@ time {
 }
 
 @media (max-width: 900px) {
+  .topbar {
+    padding-top: 1rem;
+  }
+
   .hero,
   .section,
   .stack-layout {
@@ -341,27 +350,91 @@ time {
 
   .hero {
     align-items: start;
+    gap: 2rem;
     min-height: auto;
+    padding-top: 2.5rem;
   }
 
   .hero-copy {
     padding-bottom: 0;
   }
 
+  h1 {
+    font-size: 5.4rem;
+    max-width: 720px;
+  }
+
+  .intro {
+    font-size: 1.16rem;
+    max-width: 680px;
+  }
+
+  .profile-panel {
+    box-shadow: 0 18px 45px rgba(18, 21, 20, 0.07);
+  }
+
+  .profile-panel strong {
+    font-size: 1.95rem;
+  }
+
   .section-heading {
     max-width: 620px;
+  }
+
+  .section-heading h2 {
+    font-size: 2.55rem;
+    line-height: 1.05;
   }
 }
 
 @media (max-width: 680px) {
   .topbar {
-    align-items: flex-start;
+    align-items: stretch;
+    flex-direction: column;
     gap: 1rem;
+    padding: 1rem;
   }
 
   .nav-links {
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .nav-links a {
+    align-items: center;
+    display: inline-flex;
+    font-size: 0.78rem;
+    justify-content: center;
+    min-height: 42px;
+    padding: 0 0.55rem;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .nav-links a + a {
+    border-left: 1px solid var(--line);
+  }
+
+  .hero {
+    gap: 1.4rem;
+    padding: 1.75rem 1rem 3rem;
+  }
+
+  h1 {
+    font-size: 3.55rem;
+    line-height: 0.94;
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    font-size: 1.03rem;
+    line-height: 1.62;
   }
 
   .skill-grid,
@@ -373,9 +446,59 @@ time {
 
   .actions {
     flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 1.5rem;
   }
 
   .button {
+    min-height: 50px;
     width: 100%;
+  }
+
+  .profile-panel,
+  .skill-card,
+  .research-item,
+  .education-block {
+    padding: 1.15rem;
+  }
+
+  .profile-panel strong {
+    font-size: 1.55rem;
+    line-height: 1.12;
+  }
+
+  .section {
+    gap: 1.6rem;
+    padding: 2.7rem 1rem;
+  }
+
+  .section-heading h2 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .timeline-item {
+    gap: 0.65rem;
+    padding: 1.2rem 0;
+  }
+
+  .timeline-item:first-child {
+    padding-top: 0;
+  }
+
+  .tech-row {
+    gap: 0.45rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .nav-links a {
+    font-size: 0.73rem;
+    padding: 0 0.35rem;
   }
 }
