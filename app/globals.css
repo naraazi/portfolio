@@ -2,16 +2,16 @@
 
 @theme {
   --font-sans: Arial, Helvetica, sans-serif;
-  --color-ink: #121514;
-  --color-graphite: #2c3431;
-  --color-mist: #f4f6f2;
-  --color-paper: #fffdf8;
-  --color-sage: #dfe9df;
-  --color-teal: #08756f;
-  --color-teal-dark: #063f3b;
-  --color-coral: #bf5d35;
-  --color-gold: #c8a24a;
-  --color-blueprint: #263d6b;
+  --color-ink: #2b1812;
+  --color-graphite: #51372c;
+  --color-mist: #f6efe6;
+  --color-paper: #fff8ee;
+  --color-sage: #eadccc;
+  --color-teal: #9b5a31;
+  --color-teal-dark: #5a2f1d;
+  --color-coral: #c47443;
+  --color-gold: #d8aa5f;
+  --color-blueprint: #6f4a35;
 }
 
 * {
@@ -26,10 +26,11 @@ body {
   margin: 0;
   overflow-x: hidden;
   background:
-    linear-gradient(135deg, rgba(223, 233, 223, 0.72), transparent 34%),
-    linear-gradient(315deg, rgba(200, 162, 74, 0.12), transparent 28%),
-    #f4f6f2;
-  color: #121514;
+    radial-gradient(circle at 12% 8%, rgba(216, 170, 95, 0.28), transparent 28rem),
+    radial-gradient(circle at 88% 14%, rgba(155, 90, 49, 0.2), transparent 24rem),
+    linear-gradient(135deg, rgba(234, 220, 204, 0.9), transparent 38%),
+    #f6efe6;
+  color: #2b1812;
 }
 
 a {
@@ -38,22 +39,22 @@ a {
 }
 
 ::selection {
-  background: #08756f;
-  color: #fffdf8;
+  background: #5a2f1d;
+  color: #fff8ee;
 }
 
 :root {
-  --surface: rgba(255, 253, 248, 0.86);
-  --surface-strong: #fffdf8;
-  --surface-muted: rgba(223, 233, 223, 0.72);
-  --foreground: #121514;
-  --muted: rgba(44, 52, 49, 0.72);
-  --line: rgba(18, 21, 20, 0.1);
-  --accent: #08756f;
-  --accent-strong: #063f3b;
-  --warm: #bf5d35;
-  --shadow-soft: 0 18px 55px rgba(18, 21, 20, 0.06);
-  --shadow-panel: 0 28px 80px rgba(18, 21, 20, 0.1);
+  --surface: rgba(255, 248, 238, 0.88);
+  --surface-strong: #fff8ee;
+  --surface-muted: rgba(234, 220, 204, 0.76);
+  --foreground: #2b1812;
+  --muted: rgba(81, 55, 44, 0.74);
+  --line: rgba(67, 36, 23, 0.13);
+  --accent: #9b5a31;
+  --accent-strong: #5a2f1d;
+  --warm: #c47443;
+  --shadow-soft: 0 18px 55px rgba(67, 36, 23, 0.08);
+  --shadow-panel: 0 28px 80px rgba(67, 36, 23, 0.13);
 }
 
 @layer components {
@@ -68,7 +69,12 @@ a {
 
   .brand {
     @apply flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-ink text-sm font-black text-paper;
-    box-shadow: 0 18px 40px rgba(18, 21, 20, 0.16);
+    background:
+      linear-gradient(145deg, rgba(216, 170, 95, 0.22), transparent 42%),
+      linear-gradient(135deg, #5a2f1d, #2b1812 58%, #7a4328);
+    box-shadow:
+      0 18px 40px rgba(67, 36, 23, 0.18),
+      inset 0 0 0 1px rgba(255, 248, 238, 0.16);
   }
 
   .nav-links {
@@ -145,11 +151,16 @@ a {
 
   .button.primary {
     @apply bg-ink text-paper;
-    box-shadow: 0 18px 45px rgba(18, 21, 20, 0.18);
+    background:
+      linear-gradient(135deg, #5a2f1d, #8b4e2d 54%, #c47443);
+    box-shadow:
+      0 18px 45px rgba(90, 47, 29, 0.22),
+      inset 0 0 0 1px rgba(255, 248, 238, 0.16);
   }
 
   .button.primary:hover {
-    background: var(--accent-strong);
+    background:
+      linear-gradient(135deg, #442416, #7a4328 48%, #d08a50);
   }
 
   .button.secondary {
