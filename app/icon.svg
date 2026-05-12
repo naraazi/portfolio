@@ -1,11 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#2D5128" />
+  <rect width="64" height="64" rx="14" fill="#071207" />
+  <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#537B2F" stroke-width="2" />
   <path
     d="M15 47V13h10v25h24v9H15Z"
-    fill="#FBFDDB"
+    fill="#F4F7CF"
   />
   <path
     d="M41 13h8v8h-8z"
-    fill="#E4EB9C"
+    fill="#8DA750"
   />
 </svg>
