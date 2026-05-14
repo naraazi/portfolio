@@ -110,8 +110,8 @@ export default function Home() {
                     <p className="intro">
                         Desenvolvedor Full Stack.
                         <br />
-                        Criando plataformas, automações e
-                        visualizações que transformam dados em decisões melhores.
+                        Criando plataformas, automações e visualizações que
+                        transformam dados em decisões melhores.
                     </p>
                     <div className="actions" aria-label="Ações principais">
                         <a
@@ -130,17 +130,29 @@ export default function Home() {
                     </div>
                 </div>
 
-                <aside className="profile-panel" aria-label="Resumo profissional">
-                    <p className="panel-label">Disponível em Santarém, Brasil</p>
-                    <strong>Desenvolvimento de software com base sólida em dados.</strong>
+                <aside
+                    className="profile-panel"
+                    aria-label="Resumo profissional"
+                >
+                    <p className="panel-label">Situado em Santarém, Brasil</p>
+                    <strong>
+                        Desenvolvimento de software com base sólida em dados.
+                    </strong>
                     <p>
-                        Experiência com produtos web, BI, integração de sistemas,
-                        visão computacional e documentação técnica para diferentes
-                        perfis de usuários.
+                        Experiência com produtos web, BI, integração de
+                        sistemas, visão computacional e documentação técnica
+                        para diferentes perfis de usuários.
                     </p>
-                    <div className="contact-list" aria-label="Links profissionais">
-                        <a href="https://lorenzoalberto.dev.br">lorenzoalberto.dev.br</a>
-                        <a href="https://github.com/naraazi">github.com/naraazi</a>
+                    <div
+                        className="contact-list"
+                        aria-label="Links profissionais"
+                    >
+                        <a href="https://lorenzoalberto.dev.br">
+                            lorenzoalberto.dev.br
+                        </a>
+                        <a href="https://github.com/naraazi">
+                            github.com/naraazi
+                        </a>
                         <a href="https://www.linkedin.com/in/lorenzo-alberto-3bb332243">
                             linkedin.com/in/lorenzo-alberto
                         </a>
@@ -148,7 +160,10 @@ export default function Home() {
                 </aside>
             </section>
 
-            <section className="section skills-section" aria-labelledby="skills-title">
+            <section
+                className="section skills-section"
+                aria-labelledby="skills-title"
+            >
                 <div className="section-heading">
                     <p className="eyebrow">Competências</p>
                     <h2 id="skills-title">O que eu construo bem</h2>
@@ -163,14 +178,21 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="section timeline-section" id="experiencia" aria-labelledby="experience-title">
+            <section
+                className="section timeline-section"
+                id="experiencia"
+                aria-labelledby="experience-title"
+            >
                 <div className="section-heading">
                     <p className="eyebrow">Experiência</p>
                     <h2 id="experience-title">Trajetória profissional</h2>
                 </div>
                 <div className="timeline">
                     {experiences.map((item) => (
-                        <article className="timeline-item" key={`${item.period}-${item.role}`}>
+                        <article
+                            className="timeline-item"
+                            key={`${item.period}-${item.role}`}
+                        >
                             <time>{item.period}</time>
                             <div>
                                 <h3>{item.role}</h3>
@@ -182,10 +204,16 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="section split-section" id="pesquisa" aria-labelledby="research-title">
+            <section
+                className="section split-section"
+                id="pesquisa"
+                aria-labelledby="research-title"
+            >
                 <div className="section-heading">
                     <p className="eyebrow">Pesquisa e extensão</p>
-                    <h2 id="research-title">Projetos acadêmicos com entrega real</h2>
+                    <h2 id="research-title">
+                        Projetos acadêmicos com entrega real
+                    </h2>
                 </div>
                 <div className="research-list">
                     {research.map((item) => (
@@ -198,7 +226,11 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="section stack-section" id="stack" aria-labelledby="stack-title">
+            <section
+                className="section stack-section"
+                id="stack"
+                aria-labelledby="stack-title"
+            >
                 <div className="section-heading">
                     <p className="eyebrow">Stack</p>
                     <h2 id="stack-title">Ferramentas e formação</h2>
@@ -216,8 +248,8 @@ export default function Home() {
                         <h3>Ciência da Computação</h3>
                         <p>
                             Bacharelado na Universidade Federal do Oeste do Pará
-                            (UFOPA), em Santarém. Previsão de conclusão: junho de
-                            2026.
+                            (UFOPA), em Santarém. Previsão de conclusão: junho
+                            de 2026.
                         </p>
                         <h3>Certificações</h3>
                         <ul>
