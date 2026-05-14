@@ -122,7 +122,7 @@ export default function Home() {
                         </a>
                         <a
                             href="/files/curriculo.pdf"
-                            className="button primary"
+                            className="button secundary"
                             download="Curriculo - Lorenzo Alberto.pdf"
                         >
                             Baixar currículo
