@@ -108,8 +108,9 @@ export default function Home() {
                     <p className="eyebrow">Full stack · dados · IA aplicada</p>
                     <h1 id="hero-title">Lorenzo Alberto</h1>
                     <p className="intro">
-                        Desenvolvedor Full Stack e estudante de Ciência da
-                        Computação, criando plataformas, automações e
+                        Desenvolvedor Full Stack.
+                        <br />
+                        Criando plataformas, automações e
                         visualizações que transformam dados em decisões melhores.
                     </p>
                     <div className="actions" aria-label="Ações principais">
