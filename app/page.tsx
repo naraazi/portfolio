@@ -147,14 +147,12 @@ export default function Home() {
                         className="contact-list"
                         aria-label="Links profissionais"
                     >
-                        <a href="https://lorenzoalberto.dev.br">
-                            lorenzoalberto.dev.br
-                        </a>
+                        <p>Links oficiais:</p>
                         <a href="https://github.com/naraazi">
-                            github.com/naraazi
+                            Meu repositório de projetos: github.com/naraazi
                         </a>
                         <a href="https://www.linkedin.com/in/lorenzo-alberto-3bb332243">
-                            linkedin.com/in/lorenzo-alberto
+                            Meu LinkedIn: linkedin.com/in/lorenzo-alberto
                         </a>
                     </div>
                 </aside>

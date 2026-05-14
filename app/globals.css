@@ -292,6 +292,11 @@ a {
     letter-spacing: -0.01em;
   }
 
+  .contact-list p {
+    @apply text-sm font-semibold text-ink;
+    margin-bottom: 0;
+  }
+
   .contact-list a {
     overflow-wrap: anywhere;
   }
