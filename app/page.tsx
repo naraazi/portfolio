@@ -7,7 +7,7 @@ const coreSkills = [
     {
         title: "Dados e BI",
         description:
-            "ETL, SQL, Python, dashboards e visualizações interativas para explorar indicadores institucionais.",
+            "ETL, SQL, Python, dashboards e storytelling: visualizações interativas para explorar indicadores.",
     },
     {
         title: "IA aplicada",
