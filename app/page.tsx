@@ -116,13 +116,13 @@ export default function Home() {
                     <div className="actions" aria-label="Ações principais">
                         <a
                             href="mailto:lorenzoalberto02@gmail.com"
-                            className="button primary"
+                            className="button primary contact-button"
                         >
                             Entrar em contato
                         </a>
                         <a
                             href="/curriculo"
-                            className="button primary"
+                            className="button secondary resume-button"
                             download="Currículo profissional - Lorenzo Alberto.pdf"
                         >
                             Baixar currículo
