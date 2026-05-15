@@ -121,7 +121,7 @@ export default function Home() {
                             Entrar em contato
                         </a>
                         <a
-                            href="/home/lorenzo/desenvolvimento/portfolio/public/files/Currículo profissional - Lorenzo Alberto.pdf"
+                            href="/curriculo"
                             className="button primary"
                             download="Currículo profissional - Lorenzo Alberto.pdf"
                         >
