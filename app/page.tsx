@@ -151,8 +151,8 @@ export default function Home() {
                         <a href="https://github.com/naraazi">
                             Meu repositório de projetos: github.com/naraazi
                         </a>
-                        <a href="https://www.linkedin.com/in/lorenzo-alberto-3bb332243">
-                            Meu LinkedIn: linkedin.com/in/lorenzo-alberto
+                        <a href="https://www.linkedin.com/in/lorenzoalberto-dev">
+                            Meu LinkedIn: linkedin.com/in/lorenzoalberto-dev
                         </a>
                     </div>
                 </aside>
