@@ -149,10 +149,10 @@ export default function Home() {
                     >
                         <p>Links oficiais:</p>
                         <a href="https://github.com/naraazi">
-                            Meu repositório de projetos: github.com/naraazi
+                            github.com/naraazi
                         </a>
                         <a href="https://www.linkedin.com/in/lorenzoalberto-dev">
-                            Meu LinkedIn: linkedin.com/in/lorenzoalberto-dev
+                            linkedin.com/in/lorenzoalberto-dev
                         </a>
                     </div>
                 </aside>
