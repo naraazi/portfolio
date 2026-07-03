@@ -23,7 +23,7 @@ export default function Home() {
                             Entrar em contato
                         </a>
                         <a
-                            href="https://github.com/naraazi"
+                            href="https://github.com/lorenzoalberto"
                             className="button secondary"
                         >
                             Ver próximos projetos
